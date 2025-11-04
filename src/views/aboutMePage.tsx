@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 const technologies = [
   "JavaScript", "TypeScript", "React", "Next.js", "Node.js", "Python",
   "PostgreSQL", "MongoDB", "Docker", "Git", "Tailwind CSS", "REST APIs",
@@ -6,7 +8,7 @@ const technologies = [
 
 export default function AboutMePage() {
   return (
-    <section id="about" className="w-full min-h-screen py-20 px-4 md:px-8 lg:px-16 bg-gray-100 dark:bg-gray-800 flex items-center">
+    <section id="about" className="w-full min-h-screen py-20 px-4 md:px-8 lg:px-16 bg-gray-100 dark:bg-dark-cyan flex items-center">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl font-bold mb-8 text-left">&lt;About Me/&gt;</h2>
         <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-12 leading-relaxed">

@@ -1,17 +1,18 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  darkMode: "class", // Habilita el modo oscuro por clase
+import type { Config } from "tailwindcss";
+
+const config: Config = {
+  darkMode: "class", // ¡Esta línea es la más importante!
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/views/**/*.{js,ts,jsx,tsx,mdx}", // Asegúrate de que esta línea esté
-    "./node_modules/flowbite-react/lib/esm/**/*.js",
+    "./src/views/**/*.{js,ts,jsx,tsx,mdx}", // Añade la carpeta de vistas
   ],
   theme: {
     extend: {
       colors: {
-        'dark-cyan': '#083344', // Define el color cyan oscuro
+        // Aquí definimos tu color personalizado
+        'dark-cyan': '#083344', // Este es un ejemplo de cyan oscuro (Tailwind's cyan-950)
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -20,8 +21,6 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    require("flowbite/plugin"),
-  ],
+  plugins: [],
 };
-
+export default config;
