@@ -8,8 +8,8 @@ import { Home, User, FolderKanban, Mail, Sun, Moon } from 'lucide-react';
 
 const navLinks = [
   { name: "Home", href: "#home", icon: Home },
+    { name: "About Me", href: "#about", icon: User },
   { name: "Projects", href: "#projects", icon: FolderKanban },
-  { name: "About Me", href: "#about", icon: User },
   { name: "Contact", href: "#contact", icon: Mail },
 ];
 
