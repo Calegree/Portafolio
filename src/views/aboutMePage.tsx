@@ -52,13 +52,13 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           <div className="lg:col-span-2 space-y-6 text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
             <p>
-              Soy Carlos Fernando Iturra Bravo, Ingeniero en Computación e Informática con experiencia en desarrollo Full Stack, Machine Learning y DevOps.
-            </p>
+Hola! , soy Carlos Fernando Iturra Bravo, Ingeniero en Informática y Técnico Superior en Electricidad y Automatización Industrial.            </p>
             <p>
-              Me apasiona crear soluciones escalables y eficientes que integren modelos de inteligencia artificial con aplicaciones web y móviles. Cuento con experiencia en diseño de arquitecturas backend, integración de APIs, despliegue en entornos productivos y automatización de flujos CI/CD.
-            </p>
+Cuento con experiencia en desarrollo web Full Stack, creación de aplicaciones móviles, automatización de flujos CI/CD, integración de soluciones IoT, entrenamiento de modelos de Machine Learning, así como en implementación de testing y documentación de procesos de software.            </p>
             <p>
-              He participado en proyectos académicos y de investigación, desarrollando modelos de clasificación de imágenes, APIs en Flask y aplicaciones frontend en Vue.js y React Native. Además, disfruto colaborar en equipos multidisciplinarios, documentar procesos y compartir conocimientos.
+Me apasiona la ciencia y crear soluciones tecnológicas a problemas reales, aprovechando los avances más recientes en tecnología.            </p>
+            <p>
+              Disfruto colaborar en equipos multidisciplinarios, donde distintas perspectivas enriquecen la comprensión de un problema, y valoro profundamente el intercambio de conocimientos.
             </p>
             <div className="pt-4">
                 <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">⚙️ {t('aboutSkillsTitle', 'Tecnologías y Herramientas')}</h3>
@@ -97,11 +97,11 @@ export default function AboutPage() {
                 <ul className="space-y-4 text-gray-700 dark:text-gray-300">
                     <li className="flex items-center gap-3">
                         <FiTarget className="text-xl text-gray-500 dark:text-gray-400" />
-                        <span><strong>Postulante a:</strong> Full Stack / ML / DevOps</span>
+                        <span><strong>Postulante a:</strong> Full Stack / MLOps / DevSecOps</span>
                     </li>
                     <li className="flex items-center gap-3">
                         <FiMail className="text-xl text-gray-500 dark:text-gray-400" />
-                        <a href="mailto:c.iturra07@ufromail.cl" className="hover:underline">c.iturra07@ufromail.cl</a>
+                        <a href="mailto:c.iturra07@ufromail.cl" className="hover:underline">cariturra.bravo@gmail.com</a>
                     </li>
                     <li className="flex items-center gap-3">
                         <FiPhone className="text-xl text-gray-500 dark:text-gray-400" />
@@ -113,7 +113,7 @@ export default function AboutPage() {
                     </li>
                      <li className="flex items-center gap-3">
                         <FiRss className="text-xl text-gray-500 dark:text-gray-400" />
-                        <span><strong>Disponibilidad:</strong> Inmediata</span>
+                        <span><strong>Disponibilidad: </strong>Inmediata, Remoto</span>
                     </li>
                 </ul>
             </div>
