@@ -8,7 +8,8 @@ import { Home, User, FolderKanban, Mail, Sun, Moon } from 'lucide-react';
 
 const navLinks = [
   { name: "Home", href: "#home", icon: Home },
-    { name: "About Me", href: "#about", icon: User },
+  { name: "About Me", href: "#about", icon: User },
+  { name: "Stack and Tools", href: "#about", icon: User },
   { name: "Projects", href: "#projects", icon: FolderKanban },
   { name: "Contact", href: "#contact", icon: Mail },
 ];
@@ -32,7 +33,7 @@ export default function Sidebar() {
           height={128}
           className="rounded-full"
         />
-        <h1 className="text-2xl font-bold mt-4">Tu Nombre</h1>
+        <h1 className="text-2xl font-bold mt-4">Carlos Iturra</h1>
       </div>
       <nav className="flex-1 px-4">
         <ul className="space-y-2">

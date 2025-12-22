@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Navbar from "@/components/navbar";
 import AboutMePage from "@/views/aboutMePage";
+import StackPage from "@/views/stackPage";
 import ContactPage from "@/views/contact";
 import ProjectsPage from "@/views/projects";
 import Sidebar from "@/components/sidebar";
@@ -15,6 +15,7 @@ export default function Home() {
         <main className="flex-1 ml-64">
           <HomePage />
           <AboutMePage />
+          <StackPage />
           <ProjectsPage />
           <ContactPage />
         </main>
