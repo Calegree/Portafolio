@@ -44,7 +44,7 @@ export default function StackPage() {
   return (
     <section id="stack" className="w-full min-h-screen py-20 px-4 md:px-8 lg:px-16 bg-white dark:bg-dark-cyan">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold mb-12 text-left text-gray-900 dark:text-white">{t('stackTitle', 'Tecnologías y Herramientas')}</h2>
+        <h2 className="text-4xl font-bold mb-12 text-left text-gray-900 dark:text-white">&lt;{t('stackTitle', 'Tecnologías y Herramientas')}/&gt;</h2>
 
         <div className="space-y-6 text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
           {Object.entries(skills).map(([category, items]) => (

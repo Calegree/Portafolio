@@ -2,7 +2,7 @@
 
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { FiMail, FiPhone, FiLinkedin, FiTarget, FiRss } from 'react-icons/fi';
+import { FiMail, FiPhone, FiLinkedin, FiTarget, FiRss, FiGlobe } from 'react-icons/fi';
 
 const languages = ["Español (Nativo)", "Inglés (Intermedio)"];
 
@@ -25,17 +25,7 @@ Me apasiona la ciencia y convertir ideas en soluciones reales usando los avances
             <p>
               Disfruto colaborar en equipos multidisciplinarios, donde distintas perspectivas enriquecen la comprensión de un problema, y valoro profundamente el intercambio de conocimientos.
             </p>
-            
-             <div className="pt-4">
-                <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">{t('aboutLanguagesTitle', 'Idiomas')}</h3>
-                <div className="flex flex-wrap gap-2">
-                    {languages.map(lang => (
-                        <span key={lang} className="bg-gray-200 dark:bg-gray-700 text-sm font-medium px-2.5 py-0.5 rounded">
-                            {lang}
-                        </span>
-                    ))}
-                </div>
-            </div>
+          
           </div>
 
           <div className="lg:col-span-1 space-y-6">
@@ -61,6 +51,19 @@ Me apasiona la ciencia y convertir ideas en soluciones reales usando los avances
                      <li className="flex items-center gap-3">
                         <FiRss className="text-xl text-gray-500 dark:text-gray-400" />
                         <span><strong>Disponibilidad: </strong>Inmediata, Remoto</span>
+                    </li>
+                      <li className="flex items-start gap-3">
+                        <FiGlobe className="text-xl mt-1 text-gray-500 dark:text-gray-400" />
+                        <div>
+                          <strong>Idiomas: </strong>
+                          <div className="flex flex-wrap gap-2 mt-1">
+                            {languages.map(lang => (
+                              <span key={lang} className="bg-gray-200 dark:bg-gray-700 text-sm font-medium px-2.5 py-0.5 rounded">
+                                {lang}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
                     </li>
                 </ul>
             </div>

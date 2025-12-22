@@ -4,12 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useTranslation } from "react-i18next";
-import { Home, User, FolderKanban, Mail, Sun, Moon } from 'lucide-react';
+import { Home, User, FolderKanban, Mail, Sun, Moon, Layers } from 'lucide-react';
 
 const navLinks = [
   { name: "Home", href: "#home", icon: Home },
   { name: "About Me", href: "#about", icon: User },
-  { name: "Stack and Tools", href: "#about", icon: User },
+  { name: "Stack", href: "#stack", icon: Layers },
   { name: "Projects", href: "#projects", icon: FolderKanban },
   { name: "Contact", href: "#contact", icon: Mail },
 ];
@@ -41,7 +41,7 @@ export default function Sidebar() {
             <li key={link.name}>
               <Link href={link.href} className="flex items-center p-2 text-lg text-gray-700 dark:text-gray-200 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 group">
                 <link.icon className="w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" />
-                <span className="ml-3">{t(link.name)}</span>
+                <span className="ml-3">{link.name === 'Stack' ? (i18n.language && i18n.language.startsWith('es') ? 'Tecnologías' : 'Stack') : t(link.name)}</span>
               </Link>
             </li>
           ))}
